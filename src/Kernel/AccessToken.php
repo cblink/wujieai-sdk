@@ -2,11 +2,10 @@
 
 namespace Cblink\WujieaiSdk\Kernel;
 
-use Psr\Http\Message\RequestInterface;
 
 class AccessToken extends \Cblink\Service\Foundation\AccessToken
 {
-    public function getToken(RequestInterface $request, array $requestOptions=[])
+    public function getToken()
     {
         $appid = $this->app->config['appid'];
         $timestamp = time();

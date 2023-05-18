@@ -11,7 +11,7 @@
     "require": {
         "php": ">=7.4",
         "ext-json": "*",
-        "cblink-service/foundation": "^1.4.0",
+        "cblink-service/foundation": "^1.3.0",
         "ext-openssl": "*"
     },
     "require-dev": {
