@@ -1,0 +1,1 @@
+{"version":1,"defects":{"AppTest::testApi":4,"AppTest::testCreate":4,"AppTest::testGetModelBaseInfos":4,"AppTest::testDecrypt":4},"times":{"AppTest::testApi":0.591,"AppTest::testCreate":0.089,"AppTest::testGetModelBaseInfos":0.883,"AppTest::testDecrypt":0.092,"AppTest::testInfo":0.538,"AppTest::testGeneratingInfo":0.542}}
