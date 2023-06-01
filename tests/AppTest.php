@@ -10,10 +10,10 @@ class AppTest extends \PHPUnit\Framework\TestCase
         parent::setUp();
 
         $this->app = new \Cblink\WujieaiSdk\WujieaiApp([
-            'appid' => 'appid',
+            'appid' => 'test',
             'private_key' => 'test',
+            'version' => 1,
             'base_url' => 'test',
-            'version' => '1'
         ]);
     }
 

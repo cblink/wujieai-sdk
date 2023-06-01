@@ -3,9 +3,11 @@
 namespace Cblink\WujieaiSdk\Kernel;
 
 
+use Psr\Http\Message\RequestInterface;
+
 class AccessToken extends \Cblink\Service\Foundation\AccessToken
 {
-    public function getToken()
+    public function getToken(RequestInterface $request = null, array $requestOptions = [])
     {
         $appid = $this->app->config['appid'];
         $timestamp = time();
@@ -34,10 +36,4 @@ class AccessToken extends \Cblink\Service\Foundation\AccessToken
         openssl_sign($content, $sign, $key, OPENSSL_ALGO_SHA256);
         return base64_encode($sign);
     }
-
-    public function getBaseUrl()
-    {
-        return sprintf('https://gate.wujiebantu.com/wj-open/v%s', $this->app->config['version']);
-    }
-
 }
