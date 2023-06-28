@@ -23,4 +23,20 @@ class AppTest extends \PHPUnit\Framework\TestCase
 
         $this->assertTrue(true);
     }
+
+    public function testCreate()
+    {
+        $result = $this->app->api->create([
+            'model' => 3,
+            'prompt' => '有一个姑娘',
+            'uc_prompt' => '低俗,色情的',
+            'num' => 2,
+            'width' => 512,
+            'height' => 512,
+            'accelerate_times' => 0,
+        ]);
+
+
+        $this->assertTrue(true);
+    }
 }

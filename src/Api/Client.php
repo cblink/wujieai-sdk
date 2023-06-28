@@ -56,6 +56,18 @@ class Client extends BaseApi
     }
 
     /**
+     * 图片年轻化
+     *
+     * @param array $data
+     * @return array|\Psr\Http\Message\ResponseInterface|string
+     * @throws \GuzzleHttp\Exception\GuzzleException
+     */
+    public function youthify(array $data = [])
+    {
+        return $this->httpPost('/ai/youthify', $data);
+    }
+
+    /**
      * 计算作画成本
      *
      * @param array $data
@@ -80,6 +92,18 @@ class Client extends BaseApi
     }
 
     /**
+     * 获取预设资源
+     *
+     * @param array $data
+     * @return array|\Psr\Http\Message\ResponseInterface|string
+     * @throws \GuzzleHttp\Exception\GuzzleException
+     */
+    public function getDefaultResourceStyleModel(array $data = [])
+    {
+        return $this->httpGet('/ai/default_resource_style_model ', $data);
+    }
+
+    /**
      * 撤销作画
      *
      * @param array $data
@@ -90,6 +114,7 @@ class Client extends BaseApi
     {
         return $this->httpPost('/ai/cancel', $data);
     }
+
 
     /**
      * 获取模型列表
