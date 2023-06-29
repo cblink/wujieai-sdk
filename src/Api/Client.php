@@ -100,7 +100,7 @@ class Client extends BaseApi
      */
     public function getDefaultResourceStyleModel(array $data = [])
     {
-        return $this->httpGet('/ai/default_resource_style_model ', $data);
+        return $this->httpGet('/ai/default_resource_style_model', $data);
     }
 
     /**
